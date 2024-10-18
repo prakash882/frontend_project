@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit profile</title>
+    <link rel="stylesheet" href="style_bidderaccount.css">
+</head>
+<body>
+    <!-- Messages Section -->
+    <!-- This section is removed as there are no dynamic messages in static HTML -->
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Auction Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside>
+            <div class="profile">
+                <img src="img/profile.png" alt="Profile Image">
+                <p>Naresh Tamang</p>
+                <a href="#">Edit Profile</a>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#">Bids</a></li>
+                <li><a href="#">Bids Won</a></li>
+            </ul>
+        </aside>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <form method="POST" enctype="multipart/form-data">
+                <!-- CSRF Token is not required in static HTML -->
+                
+                <label for="email">Change Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="email">Confirm Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Change Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="password">Confirm Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <div class="form-actions">
+                    <button type="submit" class="continue">Save</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
